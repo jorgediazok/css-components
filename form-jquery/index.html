@@ -21,5 +21,15 @@
       <input type="submit" class="logbtn" value="Login" />
       <div class="bottom-text">Dont have acount? <a href="#">Sign Up</a></div>
     </form>
+    <script type="text/javascript">
+      $('.txtb input').on('focus', function () {
+        $(this).addClass('focus');
+      });
+      $('.txtb input').on('blur', function () {
+        if ($(this).val() == '') {
+          $(this).removeClass('focus');
+        }
+      });
+    </script>
   </body>
 </html>
