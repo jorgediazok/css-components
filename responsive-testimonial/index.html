@@ -25,7 +25,43 @@
                   quas nisi asperiores dolorum.
                 </p>
                 <div class="imgBx">
-                  <img src="" alt="" />
+                  <img src="user1.jpeg" alt="" />
+                </div>
+                <div class="details">
+                  <h2>Someone Famous<br /><span>Website Designer</span></h2>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card">
+              <div class="layer"></div>
+              <div class="content">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Provident molestias magnam ratione architecto enim sit cumque
+                  quas nisi asperiores dolorum.
+                </p>
+                <div class="imgBx">
+                  <img src="user1.jpeg" alt="" />
+                </div>
+                <div class="details">
+                  <h2>Someone Famous<br /><span>Website Designer</span></h2>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card">
+              <div class="layer"></div>
+              <div class="content">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Provident molestias magnam ratione architecto enim sit cumque
+                  quas nisi asperiores dolorum.
+                </p>
+                <div class="imgBx">
+                  <img src="user1.jpeg" alt="" />
                 </div>
                 <div class="details">
                   <h2>Someone Famous<br /><span>Website Designer</span></h2>
@@ -38,5 +74,21 @@
     </div>
 
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper('.swiper-container', {
+        effect: 'coverflow',
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: 'auto',
+        coverflow: {
+          rotate: 50,
+          stretch: 0,
+          depth: 100,
+          modifier: 1,
+          slideShadows: true,
+        },
+        loop: true,
+      });
+    </script>
   </body>
 </html>
