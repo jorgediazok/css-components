@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>RGB Color-Slider</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="wrapper">
+        R
+        <input
+          type="range"
+          min="0"
+          max="225"
+          value="0"
+          id="red"
+          oninput="colors()"
+        />
+        <div class="wrapper">
+          G
+          <input
+            type="range"
+            min="0"
+            max="225"
+            value="0"
+            id="green"
+            oninput="colors()"
+          />
+          <div class="wrapper">
+            B
+            <input
+              type="range"
+              min="0"
+              max="225"
+              value="0"
+              id="blue"
+              oninput="colors()"
+            />
+            <span id="output">RGB (0,0,0)</span>
+      </div>
+    </div>
+    <script>
+      function colors(){
+        let red = document.getElementById("red").value;
+        let green = document.getElementById("green").value;
+        let blue = document.getElementById("blue").value;
+
+        document.body.style.backgroundColor = 'rgb(' + red + ',' + green + ',' + blue + ')';
+        document.getElementById("output").innerHTML = 'rgb(' + red + ',' + green + ',' + blue + ')';
+      }
+    </script>
+  </body>
+</html>
