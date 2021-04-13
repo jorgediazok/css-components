@@ -12,12 +12,13 @@
       <img src="strono.jpg" alt="background" class="back" />
       <header>
         <a href="#" class="logo">Astronomy</a>
+        <div class="toggle"></div>
         <ul class="navigation">
-          <li><a href="#" class="active">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Universe</a></li>
-          <li><a href="#">Asteroids</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#" class="active" style="--i: 1">Home</a></li>
+          <li><a href="#" style="--i: 2">About</a></li>
+          <li><a href="#" style="--i: 3">Universe</a></li>
+          <li><a href="#" style="--i: 4">Asteroids</a></li>
+          <li><a href="#" style="--i: 5">Contact</a></li>
         </ul>
       </header>
 
@@ -35,16 +36,24 @@
 
       <ul class="sci">
         <li>
-          <a href="#"><img src="facebook.png" alt="" /></a>
+          <a href="#" style="--i: 12"><img src="facebook.png" alt="" /></a>
         </li>
         <li>
-          <a href="#"><img src="twitter.png" alt="" /></a>
+          <a href="#" style="--i: 13"><img src="twitter.png" alt="" /></a>
         </li>
         <li>
-          <a href="#"><img src="instagram.png" alt="" /></a>
+          <a href="#" style="--i: 14"><img src="instagram.png" alt="" /></a>
         </li>
       </ul>
     </section>
+    <script>
+      const menuToggle = document.querySelector('.toggle');
+      const navitation = document.querySelector('.navigation');
+      menuToggle.onclick = function () {
+        menuToggle.classList.toggle('active');
+        navigation.classList.toggle('active');
+      };
+    </script>
     <script src="index.js"></script>
   </body>
 </html>
